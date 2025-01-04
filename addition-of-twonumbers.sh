@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p echo "Enter your name: " name
+read -p "Enter your name: " name
 echo "This script performed by: $name"
 
 
