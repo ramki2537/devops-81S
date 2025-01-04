@@ -11,6 +11,7 @@ fi
 # check whether package installation
 
 dnf list installed mysql 
+
 if [ $? -ne 0 ]
 then 
     dnf install mysql -y
@@ -22,11 +23,12 @@ then
     echo "MySQL package installation...SUCCESS"
     fi
 else 
-    echo "MySWL package already.....INSTALLED"
+    echo "MySQL package already.....INSTALLED"
 fi
 
 # git installation
 dnf lis installed git
+
 if [ $? -ne 0 ]
 then
      dnf install git -y
