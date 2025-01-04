@@ -15,7 +15,7 @@ VALIDATE(){
 
 if [ $USERID -ne 0 ]
 then
-    else "Error: You need admin access to run this script"
+    echo "Error: You need admin access to run this script"
     exit 1
 fi
 
