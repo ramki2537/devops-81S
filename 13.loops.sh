@@ -31,7 +31,7 @@ fi
 
 echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
-for package in $@ {
+for package in $@ 
 do 
    dnf list installed $package &>>$LOG_FILE_NAME
    if [ $? -ne 0 ]
@@ -41,5 +41,5 @@ do
     else
       echo -e "$package is already $Y...INSTALLED $N" 
 done
-}
+
 
