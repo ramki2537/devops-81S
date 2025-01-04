@@ -1,7 +1,7 @@
 #!/bin/bash
 
 value1=$1
-value2=@2
+value2=$2
 sum=$((value1+value2))
 timestamp=$(date)
 
