@@ -1,10 +1,9 @@
 #!/bin/bash
 
-echo "Enter package name to install: " package
-read -p package
+read -p "Enter package name to install: " package
 
 echo "Installing $package"
 
-dnf install $package
+dnf install $package -y
 
 echo "Completed installation $package"
