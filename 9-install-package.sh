@@ -40,32 +40,3 @@ then
 else
      echo "Git package already....INSTALLED"
 fi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-dnf install git -y
-
-if [ $? -ne 0 ]
-then 
-    echo "Git package installation...FAILED"
-    exit 1
-else
-    echo "Git package installation...SUCCESS"
-fi
