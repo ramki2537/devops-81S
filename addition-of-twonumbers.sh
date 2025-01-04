@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read -p "Enter your name: " name
-echo "This script performed by: $name"
+read -p "Enter your name: " person
+echo "This script performed by: $person"
 
 
 value1=$1
