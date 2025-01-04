@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "Enter your name: "
-echo "Enter value number 1: "
-echo "Enter value number 2: "
+echo "Enter person and value1 and value2: "
 
 read -p person value1 value2
 
