@@ -4,6 +4,6 @@ read -p "Enter package name to install: " package
 
 echo "Installing $package"
 
-dnf install $package -y
+dnf install $package -y &>>/var/log/ramalogs/package.log
 
-echo "Completed installation $package"
+echo "Completed $package installation "
