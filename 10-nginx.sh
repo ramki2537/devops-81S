@@ -12,8 +12,8 @@ dnf list installed nginx
 
 if [ $? -ne 0 ]
 then 
-    dnf install nginx
-    if [  $? -ne 0]
+    dnf install nginx -y
+    if [  $? -ne 0 ]
     then
         echo "Nginx package installation....FAILED"
         exit 1
