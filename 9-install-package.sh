@@ -8,8 +8,6 @@ then
     exit 1  # to exit code due to insufficient previges
 fi
 
-# check whether package installation
-
 dnf list installed mysql 
 
 if [ $? -ne 0 ]
@@ -17,7 +15,7 @@ then
     dnf install mysql -y
     if [ $? -ne 0 ]
     then 
-    echo "MySQL package installation...FAILED"
+    echo "MySQL package installation...FAILURE"
     exit 1
     else
     echo "MySQL package installation...SUCCESS"
@@ -34,7 +32,7 @@ then
      dnf install git -y
      if [ $? -ne 0 ]
      then
-        echo "Git package installation....FAILED"
+        echo "Git package installation....FAILURE"
         exit 1
      else
         echo "Git package installation....SUCCESS"
