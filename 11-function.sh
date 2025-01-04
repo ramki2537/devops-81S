@@ -41,4 +41,13 @@ then
 else 
     echo -e "Git is already...$Y INSTALLED"
 fi
-    
+
+dnf list installed nginx
+
+if [ $? -ne 0 ]
+then
+    dnf install nginx -y
+    VALIDATE @? "Installating nginx"
+else
+    echo -e "MySQL is already...$Y INSTALLED"
+fi
