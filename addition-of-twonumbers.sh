@@ -4,7 +4,7 @@ echo "Enter your name: "
 echo "Enter value number 1: "
 echo "Enter value number 2: "
 
-read person value1 value2
+read -p person value1 value2
 
 sum=$((value1+value2))
 timestamp=$(date)
