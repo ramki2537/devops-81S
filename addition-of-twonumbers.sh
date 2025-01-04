@@ -3,9 +3,9 @@
 read -s -p "Enter your name: " person
 echo "This script performed by: $person"
 
+read -p "Enter value number 1: " value1
+read -p "Enter value number 2: " value2
 
-value1=$1
-value2=$2
 sum=$((value1+value2))
 timestamp=$(date)
 
