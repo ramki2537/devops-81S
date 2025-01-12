@@ -1,7 +1,4 @@
 #!/bin/bash
-echo "Enter values:"
-read value1
-
 
 echo "All variables passed: $@"
 echo "Number of variables passed to the script: $#"
