@@ -6,4 +6,5 @@ number2=80
 timestamp=$( date )
 sum=$(( $number1+$number2 ))
 
+echo "script executed on $timestamp"
 echo "$number1 and $number2 values addition is: $sum"
