@@ -3,7 +3,7 @@
 read -p "Please enter first value: " value1
 read -p "Please enter second value: " value2
 
-time=$( date )
+time=$( date | awk -F " " '{print$1F}')
 sum=$(( $value1+$value2 ))
 
 echo "Script executed on: $time"
