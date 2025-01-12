@@ -1,6 +1,10 @@
 #!/bin/bash
 
-read -p "Enter 4 values: " value1
+number1=23
+number2=69
+sum=$(( $number1+$number2 ))
+
+echo "Sum for $number1 and $number2 is: $sum"
 
 echo "All variables passed: $@"
 echo "Number of variables passed to the script: $#"
