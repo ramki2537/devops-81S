@@ -2,7 +2,7 @@
 
 read -p "Enter 4 values: " value1
 
-echo "All variables passed to the script: $@"
+echo "All variables passed: $@"
 echo "Number of variables passed to the script: $#"
 echo "Number of variables passed in single string: $*"
 echo "Current script process id: $$"
