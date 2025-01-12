@@ -7,4 +7,5 @@ time=$( date | awk -F " " '{print$1F}')
 sum=$(( $value1+$value2 ))
 
 echo "Script executed on: $time"
-echo " addition of $value1 and $value2 is: $sum"
+echo "addition of $value1 and $value2 is: $sum"
+echo "All variables passed: $@"
