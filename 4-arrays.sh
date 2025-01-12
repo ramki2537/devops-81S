@@ -2,4 +2,4 @@
 
 movies=("hyderabad" "delhi" "Bangalore")
 
-echo "first city in india: ${movies[0]}
+echo "first city in india: ${movies[0]}"
