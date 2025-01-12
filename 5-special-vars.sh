@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter 4 values: " value1 value2 value3 value4
+read -p "Enter 4 values: " value1
 
 echo "All variables passed to the script: $@ "
 echo "Number of variables passed to the script: $#"
