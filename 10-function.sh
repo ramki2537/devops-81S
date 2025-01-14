@@ -17,9 +17,9 @@ fi
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
-   echo "$2 installation is....$R FAILED $N"
+   echo -e "$2 installation is....$R FAILED $N"
 else
-   echo "$2 installation is....$G SUCCESS $N"
+   echo -e "$2 installation is....$G SUCCESS $N"
 fi
 }
 
@@ -32,6 +32,6 @@ do
       dnf install $package -y &>>$LOGS_FOLDER
       VALIDATE $? "$package"
    else
-     echo "$package software already...INSTALLED"
+     echo -e $Y "$package software already...INSTALLED $N"
    fi
 done
