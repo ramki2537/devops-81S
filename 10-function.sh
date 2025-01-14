@@ -6,6 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGS_FOLDER="/root/devops-81S/logs"
+LOG_FILE_NAME="$LOGS_FOLDER/latest.log"
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
@@ -26,10 +27,10 @@ fi
 
 for package in $@
 do
-   dnf list installed $package &>>$LOGS_FOLDER
+   dnf list installed $package &>>$LOG_FILE_NAME
    if [ $? -ne 0 ]
    then 
-      dnf install $package -y &>>$LOGS_FOLDER
+      dnf install $package -y &>>$LOG_FILE_NAME
       VALIDATE $? "$package"
    else
      echo -e $Y "$package software already...INSTALLED $N"
