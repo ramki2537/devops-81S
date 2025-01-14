@@ -19,6 +19,7 @@ then
    echo -e "$2 installation...$R FAILED $N"
 else
    echo -e "$2 installation...$G SUCCESS $N"
+fi
 }
 
 dnf list installed nginx
